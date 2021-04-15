@@ -4,11 +4,25 @@
  */
 
 const even = function(numbers){
-    
+    let evenArray = []
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 == 0) {
+            evenArray.push(numbers[i])
+        }
+    }
+    console.log(evenArray)
+    return evenArray;
 }
 
 const odd = function(numbers){
-
+    let oddArray = []
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 != 0) {
+            oddArray.push(numbers[i])
+        }
+    }
+    console.log(oddArray)
+    return oddArray;
 }
 
 // TESTS (no modificar)

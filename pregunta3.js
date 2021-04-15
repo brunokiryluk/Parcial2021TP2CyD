@@ -3,7 +3,14 @@
 // si la longitud del array es < 3 se debe retornar undefined
 
 const greater3 = nums => {
-    
+    nums.sort((a,b)=>b-a);
+    if (nums.length >= 3) {
+        for (let index = 0; index < nums.length; index++) {
+                 
+        }
+    } else {
+        return undefined
+    }
 }
 
 

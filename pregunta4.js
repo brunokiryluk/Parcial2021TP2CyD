@@ -21,12 +21,27 @@
    * @param {*} discoveries 
    * @param {*} inventors 
    */
-  function addDiscoveries(inventor, discoveries, inventors){
-      
-  }
+  function addDiscoveries(inventorName, discoveries, inventors){
 
+    //let inventorBuscado =  inventors.findIndex(inventor => inventorName == inventor.last)
+    let indice = inventors.findIndex(inventor => inventor.last === inventorName)
+    console.log('Cientifico buscado ' + inventors[indice].last)
+           return inventors.map(
+            inventor => (
+               
+              {...inventor, discoveries: discoveries}
+            )
+          )
+         }
+         
   console.log(addDiscoveries('Einstein', 
   ['Teoría de la relatividad especial','Equivalencia entre masa y energía','Teoría de la relatividad general'], inventors
   ));
+  
 
+
+
+  var nuevo_array = arr.map(function callback(currentValue, index, array) {
+    // Elemento devuelto de nuevo_array
+})
   
